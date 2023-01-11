@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+body {
+    font-family: oswald, sans-serif;
+    background-image: linear-gradient(to right, rgb(207,149,40), rgb(179, 173, 173));
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color:rgb(207, 149, 40);
+}
+
+.navbar-brand img {
+    width: 40px;
+    animation: myAnim 2s linear 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.sidebar {
+    background-image: linear-gradient(to left bottom, rgb(207,149,40), rgb(179, 173, 173));
+    border: 1px solid black;
+    border-radius: 10px;
+}   
+
+.sidebar a{
+    text-decoration: none;
+    color: rgb(0, 119, 255);
+}
+
+.card-title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
+}
+
+.slide-text {
+    margin: auto auto;
+}
+
+footer {
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+
+.span-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-ani {
+    animation: Phone 2s ease 0s infinite normal forwards;
+}
+
+.btn-outline-primary {
+    background-image: linear-gradient(to left bottom, rgb(207,149,40), rgb(179, 173, 173));
+}
+
+@keyframes Phone {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
